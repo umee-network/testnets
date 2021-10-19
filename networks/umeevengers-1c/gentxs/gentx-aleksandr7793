@@ -1,0 +1,7 @@
+{"body":{"messages":[{"@type":"/cosmos.staking.v1beta1.MsgCreateValidator","description":{"moniker":"aleksandr7793","identity":"4A1DED53D477793B","website":"https://twitter.com/Aleksandr779
+3","security_contact":"","details":" 🚀 TO THE MOON 🚀 "},"commission":{"rate":"0.050000000000000000","max_rate":"0.100000000000000000","max_change_rate":"0.010000000000000000"},"min_self_d
+elegation":"1","delegator_address":"umee1qjmcc4jqzr3hpl4wkxv8pc9ram99tjsqcd438p","validator_address":"umeevaloper1qjmcc4jqzr3hpl4wkxv8pc9ram99tjsqcfj7kt","pubkey":{"@type":"/cosmos.crypto.e
+d25519.PubKey","key":"HgQUD7UtpsZWxLeN6sWMmN66/doNGuUHTAyNRD/+xss="},"value":{"denom":"uumee","amount":"1000000"}}],"memo":"78a74e5528eb396f1aa52b70d244fbcf32d8cd24@95.217.216.153:26656","t
+imeout_height":"0","extension_options":[],"non_critical_extension_options":[]},"auth_info":{"signer_infos":[{"public_key":{"@type":"/cosmos.crypto.secp256k1.PubKey","key":"A4ZXWHuboIv9thpxx
+w7GvQ4WPtO/LED+jqGzfSUJKEEe"},"mode_info":{"single":{"mode":"SIGN_MODE_DIRECT"}},"sequence":"0"}],"fee":{"amount":[],"gas_limit":"200000","payer":"","granter":""}},"signatures":["7Pr1GL7xPp
+Z9Snj0iDihWry/wo21Xwk2/jBojv76xyMKNhZOgrTb7hyNbjJUfQ6edzHNEbv/3zLlT3wMa6PhFA=="]}
