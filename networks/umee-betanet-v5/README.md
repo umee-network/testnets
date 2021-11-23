@@ -98,6 +98,10 @@ curl -X POST -d "{"address": "YOUR_WALLET_ADDRESS"}" -H "Content-Type: applicati
 ```
 This command will give you 10 UMEE, limit is 100 UMEE per address.
 
+Or you can ask for tokens in the [#faucet](https://discord.gg/6nKmfejXSw) Discord channel.
+```shell
+!faucet YOUR_WALLET_ADDRESS
+```
 ## Create validator
 Use the following command (do not forget to replace `YOUR_NODE_NAME` and `YOUR_WALLET_NAME`):
 ```shell
