@@ -89,7 +89,7 @@ journalctl -u umeed -f
 ```
 If you dont have a keys, you can generate them:
 ```bash
-umeed keys add wallet --keyring-backend test
+umeed keys add wallet
 ```
 
 Now you should create your validator:
@@ -155,7 +155,7 @@ ExecStart=$(which peggo) orchestrator --log-level debug \
   --relay-batches=true \
   --relay-valsets=true \
   --cosmos-chain-id=\"umee-alpha-mainnet-2\" \
-  --cosmos-keyring=\"test\" \
+  --cosmos-keyring=\"os\" \
   --cosmos-keyring-dir=\"$HOME/.umee\" \
   --cosmos-from=\"$CREATE_VALIDATOR_WALLET\" \
   --cosmos-from-passphrase=\"YOUR_WALLET_PASSWORD\" \
