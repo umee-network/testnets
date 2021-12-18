@@ -1,13 +1,13 @@
-# Umee Alpha Mainnet v2
+# Umee Gravity Wars Testnet (`umee-alpha-mainnet-2`)
 
 ## Hardware Requirements
-* **Minimal**
-  * 4GB RAM
-  * 200GB SSD
+* **Minimum**
+  * 4 GB RAM
+  * 200 GB SSD
   * 2 vCPU
 * **Recommended**
-  * 16GB RAM
-  * 400GB SSD
+  * 16 GB RAM
+  * 600 GB SSD
   * 6 vCPU
 
 ## Installation Steps
@@ -87,7 +87,7 @@ sudo systemctl enable umeed
 sudo systemctl restart umeed
 journalctl -u umeed -f
 ```
-If you dont have a keys, you can generate them:
+If you dont have keys, you can generate them:
 ```bash
 umeed keys add wallet
 ```
@@ -118,7 +118,7 @@ $CREATE_VALIDATOR_BIN tx staking create-validator \
   --gas=auto \
   --gas-adjustment=1.4 -y
 ```
-Now we need to register our eth key.
+Now we need to register our ETH key.
 
 Init variables:
 
@@ -128,9 +128,9 @@ Init variables:
 
 ```bash
 ETH_ADDRESS="YOUR_ETHEREUM_ADDRESS"
-ETH_PK_CLEAN="YOUR_ETHEREUM_PRIVATE_KEY" # be sure you have at least 0.1 ETH on your wallet in the Goerli Network
+ETH_PK_CLEAN="YOUR_ETHEREUM_PRIVATE_KEY"
 ETH_PK="0x"$ETH_PK_CLEAN
-ETH_RPC="https://goerli-light.nodes.guru/" # you can use infura our your local light node or whatever
+ETH_RPC="https://goerli-light.nodes.guru/" # you can use infura or your own node
 ALCHEMY_API_KEY="YOUR_API_KEY" # you can get an API key for free at https://www.alchemy.com/
 
 ORCHESTRATOR_VALIDATOR_ADDRESS=$(umeed keys show $CREATE_VALIDATOR_WALLET -a)
@@ -185,4 +185,4 @@ wget -qO $HOME/peggo_height_check.go https://gist.githubusercontent.com/facundom
 go run $HOME/peggo_height_check.go
 ```
 ## Explorer
-The explorer available here: https://gravity-wars.umee.nodes.guru/
+The explorer is available here: https://gravity-wars.umee.nodes.guru/
