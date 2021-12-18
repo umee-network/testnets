@@ -56,7 +56,7 @@ Configure your node:
 UMEE_INTERNAL_MONIKER=$(hostname) # or what you prefer
 rm $HOME/.umee/config/genesis.json
 umeed init $UMEE_INTERNAL_MONIKER --chain-id umee-alpha-mainnet-2
-wget -q -O $HOME/.umee/config/genesis.json https://raw.githubusercontent.com/umee-network/testnets/main/networks/umee-alpha-mainnet-2/umee-alpha-mainnet-2-genesis.json
+wget -q -O $HOME/.umee/config/genesis.json https://raw.githubusercontent.com/umee-network/testnets/main/networks/umee-alpha-mainnet-2/genesis.json
 peers="308fccc6b1eb545d26b1021a56d2468eaf352066@134.209.194.97:26656,542a99d76a3598c9739d54f93dc9efb6743c17f7@134.122.70.132:26656,0c81c3a9796d0edf2aefde0e31521475de81a57f@143.198.139.198:26656"
 sed -i.bak -e "s/^persistent_peers *=.*/persistent_peers = \"$peers\"/" $HOME/.umee/config/config.toml
 sed -i '/\[telemetry\]/{:a;n;/enabled/s/false/true/;Ta};/\[api\]/{:a;n;/enable/s/false/true/;Ta;}' $HOME/.umee/config/app.toml
