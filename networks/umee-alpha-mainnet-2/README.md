@@ -116,7 +116,6 @@ $CREATE_VALIDATOR_BIN tx staking create-validator \
   --from=$CREATE_VALIDATOR_WALLET \
   --chain-id=umee-alpha-mainnet-2 \
   --gas=auto \
-   --keyring-backend test \
   --gas-adjustment=1.4 -y
 ```
 Now we need to register our eth key.
@@ -134,14 +133,14 @@ ETH_PK="0x"$ETH_PK_CLEAN
 ETH_RPC="https://goerli-light.nodes.guru/" # you can use infura our your local light node or whatever
 ALCHEMY_API_KEY="YOUR_API_KEY" # you can get an API key for free at https://www.alchemy.com/
 
-ORCHESTRATOR_VALIDATOR_ADDRESS=$(umeed keys show $CREATE_VALIDATOR_WALLET --keyring-backend test -a)
-ORCHESTRATOR_ADDRESS=$(umeed keys show $CREATE_VALIDATOR_WALLET --keyring-backend test -a)
+ORCHESTRATOR_VALIDATOR_ADDRESS=$(umeed keys show $CREATE_VALIDATOR_WALLET -a)
+ORCHESTRATOR_ADDRESS=$(umeed keys show $CREATE_VALIDATOR_WALLET -a)
 ```
 Send register tx:
 ```bash
-umeed tx peggy set-orchestrator-address $ORCHESTRATOR_VALIDATOR_ADDRESS $ORCHESTRATOR_ADDRESS $ETH_ADDRESS --eth-priv-key $ETH_PK --chain-id=umee-alpha-mainnet-2 --keyring-backend test -y
+umeed tx peggy set-orchestrator-address $ORCHESTRATOR_VALIDATOR_ADDRESS $ORCHESTRATOR_ADDRESS $ETH_ADDRESS --eth-priv-key $ETH_PK --chain-id=umee-alpha-mainnet-2 -y
 ```
-Run `peggo` as a service:
+Run `peggo` as a service (**do not forget to replace YOUR_WALLET_PASSWORD wtih your passphrase**):
 ```bash
 echo "[Unit]
 Description=Peggo Service
@@ -159,7 +158,7 @@ ExecStart=$(which peggo) orchestrator --log-level debug \
   --cosmos-keyring=\"test\" \
   --cosmos-keyring-dir=\"$HOME/.umee\" \
   --cosmos-from=\"$CREATE_VALIDATOR_WALLET\" \
-  --cosmos-from-passphrase=\"\" \
+  --cosmos-from-passphrase=\"YOUR_WALLET_PASSWORD\" \
   --coingecko-api=\"https://peggo-fakex-qhcqt.ondigitalocean.app/api/v3\" \
   --eth-alchemy-ws=\"wss://eth-goerli.alchemyapi.io/v2/$ALCHEMY_API_KEY\"
 Restart=on-failure
