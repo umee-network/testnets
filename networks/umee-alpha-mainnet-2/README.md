@@ -87,7 +87,7 @@ sudo systemctl enable umeed
 sudo systemctl restart umeed
 journalctl -u umeed -f
 ```
-Generate your keys:
+If you dont have a keys, you can generate them:
 ```bash
 umeed keys add wallet --keyring-backend test
 ```
