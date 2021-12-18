@@ -140,6 +140,9 @@ Send register tx:
 ```bash
 umeed tx peggy set-orchestrator-address $ORCHESTRATOR_VALIDATOR_ADDRESS $ORCHESTRATOR_ADDRESS $ETH_ADDRESS --eth-priv-key $ETH_PK --chain-id=umee-alpha-mainnet-2 -y
 ```
+
+You can found more info about `peggo` installation [here](https://github.com/umee-network/umee/wiki/Peggy-&-Peggo-Testing).
+
 Run `peggo` as a service (**do not forget to replace YOUR_WALLET_PASSWORD wtih your passphrase**):
 ```bash
 echo "[Unit]
