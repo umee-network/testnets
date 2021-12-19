@@ -184,7 +184,7 @@ Check your `peggo` health:
 wget -qO $HOME/peggo_height_check.go https://gist.githubusercontent.com/facundomedica/1c478dc3d5589fc4843278a7bedb8b5d/raw/7fb36487b9106bf6bd8ba985497894388ff44ca1/peggo_height_check.go
 go run $HOME/peggo_height_check.go
 ```
-NOTE: For it to work, API should be enabled in ´api.toml` in section `[api]` with value `enable = true`
+NOTE: For it to work, API should be enabled in ´app.toml` in section `[api]` with value `enable = true`. You already have the API enabled if you followed the instructions above.
 
 ## Explorer
 The explorer is available here: https://gravity-wars.umee.nodes.guru/
