@@ -11,7 +11,7 @@
   * 6 vCPU
 
 ## Installation Steps
-Install `go`:
+Install `go` (method 1):
 ```bash
 cd $HOME
 wget -q -O go1.17.1.linux-amd64.tar.gz https://golang.org/dl/go1.17.linux-amd64.tar.gz
@@ -22,6 +22,19 @@ echo 'export GO111MODULE=on' >> $HOME/.bash_profile
 echo 'export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin' >> $HOME/.bash_profile && . $HOME/.bash_profile
 go version
 ```
+
+Install `go` (method 2):
+```bash
+cd $HOME
+echo 'export GOROOT=/usr/local/go' >> $HOME/.bash_profile
+echo 'export GOPATH=$HOME/go' >> $HOME/.bash_profile
+echo 'export GO111MODULE=on' >> $HOME/.bash_profile
+echo 'export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin' >> $HOME/.bash_profile && . $HOME/.bash_profile
+apt -y install snapd
+snapd install go --classic
+go version
+```
+
 Install essentials:
 ```bash
 cd $HOME
