@@ -1,6 +1,7 @@
 # Week 1 of Umee Gravity Wars Testnet
 
 ## Tasks
+### Important! For every task with transactions you must use second set of wallets (both umee and ETH) you submitted in the Form1.
 * **Run Bridge Relayer: try our bridge implementation (zero profit multiplier)**
 * **20.12 12:00 UTC - 21.12 12:00 UTC**
   * Monitor the network, make sure your validator and orchestrator is signing everything correctly.
