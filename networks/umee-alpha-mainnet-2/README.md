@@ -62,6 +62,8 @@ sed -i.bak -e "s/^persistent_peers *=.*/persistent_peers = \"$peers\"/" $HOME/.u
 sed -i '/\[telemetry\]/{:a;n;/enabled/s/false/true/;Ta};/\[api\]/{:a;n;/enable/s/false/true/;Ta;}' $HOME/.umee/config/app.toml
 umeed unsafe-reset-all
 ```
+NOTE: `minimum-gas-prices` should be set to `0uumee` for `peggod` to work properly
+
 Run `umeed` through `systemd`:
 ```bash
 echo "[Unit]
