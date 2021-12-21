@@ -11,7 +11,8 @@
   * 6 vCPU
 
 ## Installation Steps
-Install `go` (method 1):
+### Install `go`
+#### Method 1:
 ```bash
 cd $HOME
 wget -q -O go1.17.1.linux-amd64.tar.gz https://golang.org/dl/go1.17.linux-amd64.tar.gz
@@ -23,20 +24,20 @@ echo 'export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin' >> $HOME/.bash_profile &
 go version
 ```
 
-Install `go` (method 2):
+#### Method 2:
 ```bash
 apt -y install snapd
 snap install go --classic
 go version
 ```
 
-Install essentials:
+### Install essentials:
 ```bash
 cd $HOME
 sudo apt update
 sudo apt install make build-essential git jq ncdu bsdmainutils nload -y < "/dev/null"
 ```
-Install `umeed`:
+### Install `umeed`:
 ```bash
 cd $HOME
 rm -r $HOME/umee
@@ -48,7 +49,7 @@ make build
 cp $HOME/umee/build/umeed /usr/local/bin
 umeed version
 ```
-Install `peggo`:
+### Install `peggo`:
 ```bash
 cd $HOME
 rm -r $HOME/peggo
@@ -59,7 +60,7 @@ git checkout tags/v0.1.0
 make install
 peggo version
 ```
-Configure your node:
+### Configure your node:
 ```bash
 UMEE_INTERNAL_MONIKER=$(hostname) # or what you prefer
 rm $HOME/.umee/config/genesis.json
@@ -70,7 +71,7 @@ sed -i.bak -e "s/^persistent_peers *=.*/persistent_peers = \"$peers\"/" $HOME/.u
 sed -i '/\[telemetry\]/{:a;n;/enabled/s/false/true/;Ta};/\[api\]/{:a;n;/enable/s/false/true/;Ta;}' $HOME/.umee/config/app.toml
 umeed unsafe-reset-all
 ```
-Run `umeed` through `systemd`:
+### Run `umeed` through `systemd`:
 ```bash
 echo "[Unit]
 Description=Umee Node
@@ -95,14 +96,13 @@ sudo systemctl enable umeed
 sudo systemctl restart umeed
 journalctl -u umeed -f
 ```
+### Generate keys
 If you dont have keys, you can generate them:
 ```bash
 umeed keys add wallet
 ```
 
-Now you should create your validator:
-
-Init variables:
+### Init variables:
 ```bash
 CREATE_VALIDATOR_BIN=umeed
 CREATE_VALIDATOR_AMOUNT=10000000
@@ -110,7 +110,7 @@ CREATE_VALIDATOR_DENOM=uumee
 CREATE_VALIDATOR_CHAIN=umee-alpha-mainnet-2
 CREATE_VALIDATOR_WALLET=wallet
 ```
-Create validator:
+### Create validator:
 ```bash
 $CREATE_VALIDATOR_BIN tx staking create-validator \
   --amount="$CREATE_VALIDATOR_AMOUNT""$CREATE_VALIDATOR_DENOM" \
@@ -126,9 +126,9 @@ $CREATE_VALIDATOR_BIN tx staking create-validator \
   --gas=auto \
   --gas-adjustment=1.4 -y
 ```
-Now we need to register our ETH key.
 
-Init variables:
+### Register ETH key:
+#### Init variables:
 
 **Be sure you have at least 0.1 ETH on your wallet in the Goerli Network**
 
@@ -144,14 +144,14 @@ ALCHEMY_API_KEY="YOUR_API_KEY" # you can get an API key for free at https://www.
 ORCHESTRATOR_VALIDATOR_ADDRESS=$(umeed keys show $CREATE_VALIDATOR_WALLET -a)
 ORCHESTRATOR_ADDRESS=$(umeed keys show $CREATE_VALIDATOR_WALLET -a)
 ```
-Send register tx:
+#### Send register tx:
 ```bash
 umeed tx peggy set-orchestrator-address $ORCHESTRATOR_VALIDATOR_ADDRESS $ORCHESTRATOR_ADDRESS $ETH_ADDRESS --eth-priv-key $ETH_PK --chain-id=umee-alpha-mainnet-2 -y
 ```
 
 You can found more info about `peggo` installation [here](https://github.com/umee-network/umee/wiki/Peggy-&-Peggo-Testing).
 
-Run `peggo` as a service (**do not forget to replace YOUR_WALLET_PASSWORD wtih your passphrase**):
+#### Run `peggo` as a service (**do not forget to replace YOUR_WALLET_PASSWORD wtih your passphrase**):
 ```bash
 echo "[Unit]
 Description=Peggo Service
