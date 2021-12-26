@@ -12,7 +12,7 @@
 
 ## Installation Steps
 ### Install `go`
-#### Method 1:
+#### Method 1 (recomended):
 ```bash
 cd $HOME
 wget -q -O go1.17.1.linux-amd64.tar.gz https://golang.org/dl/go1.17.linux-amd64.tar.gz
