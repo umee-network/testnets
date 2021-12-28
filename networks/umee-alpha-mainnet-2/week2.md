@@ -34,7 +34,7 @@ git checkout tags/v0.5.0-rc3
 make build
 cp $HOME/umee/build/umeed /usr/local/bin
 umeed version
-# gravity-wars-w2-d379d40373904a2a5a5f50882b6029058563944c
+# v0.5.0-rc3
 ```
 3. Start your `umeed` service:
 ```bash
