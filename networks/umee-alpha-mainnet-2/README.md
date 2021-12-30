@@ -189,6 +189,16 @@ journalctl -u peggod -f -o cat
 ```
 Thats all what you need to be a validator
 
+# Troubleshooting
+## "Nonce to low" error
+Nonce too low is usually an error related to your own eth address. There are 2 reasons:
+1. You are not running Peggo with Alchemy. You might be trying to send the same tx multiple times.
+2. You are using the same private key for something else
+So be sure you are using Peggo with Alchemy and restart your peggo:
+```bash
+systemctl restart peggod
+```
+
 # Tools
 ## Peggo Checker
 Check your `peggo` health:
