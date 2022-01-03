@@ -7,7 +7,7 @@
 * Bridge relayers can set customized economic factors if they choose to and monitor bridge transaction requests.
 * Relayers need to make the most fees from relaying transactions across blockchains while covering the network fees from the bridged blockchains.
 * Umee will set up an exchange rate table for uUMEE and USDT and change the rate randomly throughout the day/week.
-* Validators can choose to set a customized profit multiplier for what they would consider profitable (batchFees >= txGasCost*profitMultiplier).
+* Validators can choose to set a customized profit multiplier for what they would consider profitable (**batchFees >= txGasCost*profitMultiplier**).
 * Each validator will need to send a minimum number of successful bridge transactions during the set time.
   * **Minimum: 200 successful transactions Umee-ETH and 200 ETH-Umee**
   * **Maximum: 1,000 successful transactions Umee-ETH and 1,000 ETH-Umee**
