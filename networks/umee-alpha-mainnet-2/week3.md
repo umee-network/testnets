@@ -9,8 +9,8 @@
 * Umee will set up an exchange rate table for uUMEE and USDT and change the rate randomly throughout the day/week.
 * Validators can choose to set a customized profit multiplier for what they would consider profitable (**batchFees >= txGasCost*profitMultiplier**).
 * Each validator will need to send a minimum number of successful bridge transactions during the set time.
-  * **Minimum: 200 successful transactions Umee-ETH and 200 ETH-Umee**
-  * **Maximum: 1,000 successful transactions Umee-ETH and 1,000 ETH-Umee**
+  * **Minimum per day: 200 successful transactions Umee-ETH and 200 ETH-Umee**
+  * **Maximum per day: 1,000 successful transactions Umee-ETH and 1,000 ETH-Umee**
 * P&Ls of the validators are calculated and the ones with the highest value get the highest points.
 * Please note:
   * We will start counting a validator’s profit and loss from block height **6135700**
