@@ -32,7 +32,7 @@ In this case, the granter and grantee wallets will be used:
 ```bash
 umeed keys add grantee
 ```
-2. Set the grantee
+2. Set the granter
 - Syntax:
 ```bash
 umeed tx feegrant grant [granter_key_or_address] [grantee] [flags]
