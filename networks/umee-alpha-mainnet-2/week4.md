@@ -26,8 +26,8 @@
 This module allows accounts to grant fee allowances and to use fees from their accounts. Grantees can execute any transaction without the need to maintain sufficient fees.
 ### How to use
 In this case, the granter and grantee wallets will be used:
-- `umee1qpuaz7q3qw0lnu9jng8xa5md6p3pg9zey5z875` - granter
-- `umee1g82z6v9lynw5fepx7rczpufls6veen4pp3hjla` - grantee
+- `umee1g82z6v9lynw5fepx7rczpufls6veen4pp3hjla` - granter
+- `umee1qpuaz7q3qw0lnu9jng8xa5md6p3pg9zey5z875` - grantee
 1. Create a new wallet
 ```bash
 umeed keys add grantee
@@ -39,11 +39,11 @@ umeed tx feegrant grant [granter_key_or_address] [grantee] [flags]
 ```
 - Example:
 ```bash
-umeed tx feegrant grant umee1qpuaz7q3qw0lnu9jng8xa5md6p3pg9zey5z875 umee1g82z6v9lynw5fepx7rczpufls6veen4pp3hjla --spend-limit 10uumee --chain-id umee-alpha-mainnet-2
+umeed tx feegrant grant umee1g82z6v9lynw5fepx7rczpufls6veen4pp3hjla umee1qpuaz7q3qw0lnu9jng8xa5md6p3pg9zey5z875 --spend-limit 10uumee --chain-id umee-alpha-mainnet-2
 ```
 3. Send transaction
 ```bash
-umeed tx bank send umee1g82z6v9lynw5fepx7rczpufls6veen4pp3hjla umee1us0ue2707md96700fa3q0n7rcmvxtl3ndyypje 3uumee --fees=7uumee --chain-id umee-alpha-mainnet-2 --fee-account umee1qpuaz7q3qw0lnu9jng8xa5md6p3pg9zey5z875
+umeed tx bank send umee1qpuaz7q3qw0lnu9jng8xa5md6p3pg9zey5z875 umee1us0ue2707md96700fa3q0n7rcmvxtl3ndyypje 3uumee --fees=7uumee --chain-id umee-alpha-mainnet-2 --fee-account umee1g82z6v9lynw5fepx7rczpufls6veen4pp3hjla
 ```
 Example tx hash with the `granter` field: `5DB03B1F279AC662046046FA4F92B95414138DAE41C1191D7092E703C438EFD6`
 
