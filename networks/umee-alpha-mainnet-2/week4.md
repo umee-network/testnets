@@ -30,9 +30,9 @@ In this case, the granter and grantee wallets will be used:
 - `umee1qpuaz7q3qw0lnu9jng8xa5md6p3pg9zey5z875` - grantee
 1. Create a new wallet
 ```bash
-umeed keys add grantee
+umeed keys add granter
 ```
-2. Set the granter
+2. Set the grantee
 - Syntax:
 ```bash
 umeed tx feegrant grant [granter_key_or_address] [grantee] [flags]
