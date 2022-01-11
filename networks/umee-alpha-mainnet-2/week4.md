@@ -20,7 +20,7 @@
 
 ### Task 2
  * Create **3rd** umee wallet and use it to pay for your transactions fees using **feegrant** module. Best practice is to use the **2nd umee wallet** and send Umee tokens from your 2nd wallet to your **validator balance**
- * You will be asked to submit **5** umee chain tx HASHs which has fees paid by grantee
+ * You will be asked to submit **5** umee chain tx HASHs which has fees paid by granter
  
 ## Feegrant
 This module allows accounts to grant fee allowances and to use fees from their accounts. Grantees can execute any transaction without the need to maintain sufficient fees.
