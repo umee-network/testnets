@@ -96,7 +96,7 @@ umeed gentx wallet 10000000uumee --chain-id=umee-alpha-mainnet-3 --moniker="$UME
 - Fork [the testnets repo](https://github.com/umee-network/testnets) to your Github account
 
 - Clone your repo using
-
+#### ⚠️ If you have already forked this repository, don't forget to fetch
   ```bash
   cd $HOME
   git clone https://github.com/<your-github-username>/testnets umee-testnets
