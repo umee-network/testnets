@@ -1,0 +1,3 @@
+# Umee Gravity Wars Testnet (`umee-alpha-mainnet-3`)
+# War Zone!
+Coming soon...
