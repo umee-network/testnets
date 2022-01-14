@@ -120,7 +120,8 @@ umeed gentx wallet 10000000uumee --chain-id=umee-alpha-mainnet-3 --moniker="$UME
 ## 3. Onboarding
 ### 3.1 Follow discord announcements and submit Google form, including
 - umee validator operator address
-- validator and orchestrator umee address
+- validator umee address
+- orchestrator umee address
 - orchestrator ETH address (DO NOT reuse old orchestrator ETH address!! create new one)
 - second set of wallets for transactions: umee wallet and ETH wallet
 ### 3.2 Network is planned to start on 17th of January 12:01 UTC
