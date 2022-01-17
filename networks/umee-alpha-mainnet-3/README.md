@@ -151,7 +151,7 @@ ETH_RPC="https://goerli-light.nodes.guru/" # you can use infura or your own node
 ALCHEMY_API_KEY="YOUR_API_KEY" # you can get an API key for free at https://www.alchemy.com/
 
 ORCHESTRATOR_VALIDATOR_ADDRESS=$(umeed keys show $CREATE_VALIDATOR_WALLET -a)
-ORCHESTRATOR_ADDRESS=$(umeed keys show $CREATE_VALIDATOR_WALLET -a)
+ORCHESTRATOR_ADDRESS=$(umeed keys show YOUR_ORCHESTRATOR_WALLET_NAME -a)
 ```
 #### Send register tx:
 ```bash
