@@ -1,4 +1,5 @@
 # Umee Gravity Wars Testnet (`umee-alpha-mainnet-3`)
+### ⚠️ Instructions for week 5 tasks available [here](https://github.com/umee-network/testnets/blob/main/networks/umee-alpha-mainnet-3/week5.md)
 
 ## Hardware Requirements
 * **Minimum**
