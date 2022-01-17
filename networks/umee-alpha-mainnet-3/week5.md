@@ -7,7 +7,7 @@
 Test and analyze points of failure, opportunities, and other validators, free reign attack other validators, search for misconfigured validator setups and censor them from accumulating stake
 
 ### Task 2
-### ⚠️ Make sure you use your second set of wallets (same wallet used in Week 1) to send the required amount of transactions.
+### ⚠️ Make sure you use your second set of wallets (different from your validator and orchestrator wallets) to send the required amount of transactions.
 #### Run the Most Profitable Bridge Relayer: Test our bridge implementation in a “real world setup” (Umee and ETH have an arbitrary value)
 * Bridge relayers can set customized economic factors if they choose to and monitor bridge transaction requests.
 * Relayers need to make the most fees from relaying transactions across blockchains while covering the network fees from the bridged blockchains.
@@ -20,7 +20,7 @@ Test and analyze points of failure, opportunities, and other validators, free re
 * Please note:
   * We will start counting a validator’s profit and loss from block height **TBA**
   * We will only be counting your profit and loss on your **orchestrator address (relayer transactions)**; any other transaction fees occurred outside of your orchestrator address will **NOT** be counted
-  * Make sure you use your **second set of wallets (non validator wallet)** to send the required amount of transactions
+  * Make sure you use your **second set of wallets (different from your validator and orchestrator wallets)** to send the required amount of transactions
 
 ### Task 3
 #### Send Umee tokens to the Juno network via IBC module
