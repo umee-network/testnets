@@ -1,5 +1,5 @@
 # Week 5 of Umee Gravity Wars Testnet
-### 18.01 12:01 UTC — 25.01 12:01 UTC
+### 18.01 16:00 UTC — 25.01 16:00 UTC
 
 ## Tasks
 ### Task 1
