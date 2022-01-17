@@ -1388,6 +1388,13 @@
           "pub_key": null,
           "account_number": "0",
           "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "umee1u4ptrfga7r8vr7hs3whh5ctwecff2fwtjc9x8x",
+          "pub_key": null,
+          "account_number": "0",
+          "sequence": "0"
         }
       ]
     },
@@ -2963,6 +2970,15 @@
             {
               "denom": "uumee",
               "amount": "11000000"
+            }
+          ]
+        },
+        {
+          "address": "umee1u4ptrfga7r8vr7hs3whh5ctwecff2fwtjc9x8x",
+          "coins": [
+            {
+              "denom": "uumee",
+              "amount": "1000000000000000"
             }
           ]
         },
