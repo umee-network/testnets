@@ -103,6 +103,7 @@ sudo systemctl enable umeed
 sudo systemctl restart umeed
 journalctl -u umeed -f
 ```
+### ⚠️ The network is starting 18.01.2022 12:01 UTC.
 ### Generate keys
 If you dont have keys, you can generate them:
 ```bash
@@ -118,7 +119,7 @@ CREATE_VALIDATOR_CHAIN=umee-alpha-mainnet-3
 CREATE_VALIDATOR_WALLET=wallet
 ```
 ### Create validator:
-If you already submit gentx and was chosen as a genesis validator you may skip this step.
+If you have already submitted gentx and you were chosen as a genesis validator you may skip this step.
 ```bash
 $CREATE_VALIDATOR_BIN tx staking create-validator \
   --amount="$CREATE_VALIDATOR_AMOUNT""$CREATE_VALIDATOR_DENOM" \
