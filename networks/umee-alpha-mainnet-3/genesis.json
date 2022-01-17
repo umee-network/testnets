@@ -1,5 +1,5 @@
 {
-  "genesis_time": "2022-01-18T12:01:00Z",
+  "genesis_time": "2022-01-18T16:00:00Z",
   "chain_id": "umee-alpha-mainnet-3",
   "initial_height": "1",
   "consensus_params": {
