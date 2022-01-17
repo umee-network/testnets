@@ -1,4 +1,4 @@
-# Umee IBC task guide
+# Umee Gravity Wars Week5 IBC Task 3 guide
 
 ## IBC
 IBC is an interoperability protocol for communicating arbitrary data between arbitrary state machines.
@@ -16,11 +16,12 @@ rly version
 ```bash
 RLY_CONFIG_PATH="$HOME/relayer/interchain/chains"
 ```
-3. Initialize the relayer's configuration.
+3. Initialize the relayer's configuration
 ```bash
 rly config init
 ```
-4. Add Juno (uni-1) and Umee (umee-alpha-mainnet-3) chain configurations to the relayer's configuration:
+4. Add Juno (uni-1) and Umee (umee-alpha-mainnet-3) chain configurations to the relayer's configuration
+You can use your own RPC for both networks, in this example we use Nodes Guru RPC for Umee and Juno networks
   - Umee:
   ```bash
   echo '{
@@ -49,7 +50,7 @@ rly config init
   rly chains add -f $RLY_CONFIG_PATH/umee-alpha-mainnet-3.json
   rly chains add -f $RLY_CONFIG_PATH/uni-1.json
   ```
-5. Either import or create new keys for the relayer to use when signing and relaying transactions.
+5. Either import or create new keys for the relayer to use when signing and relaying transactions
 ```bash
 rly keys add umee-alpha-mainnet-3 test-key
 rly keys add uni-1 test-key
@@ -59,33 +60,33 @@ rly keys add uni-1 test-key
 rly keys restore umee-alpha-mainnet-3 test-key "YOUR_MNEMONIC"
 rly keys restore uni-1 test-key "YOUR_MNEMONIC"
 ```
-6. Both relayer accounts need to funded with tokens in order to successfully sign and relay transactions between the IBC-connected networks.
+6. Both relayer accounts need to funded with tokens in order to successfully sign and relay transactions between the IBC-connected networks
   - Juno faucet - [link](https://discord.gg/6krUB8QtCC)
-7. Ensure both relayer accounts are funded by querying each.
+7. Ensure both relayer accounts are funded by querying each
 ```bash
 rly q balance umee-alpha-mainnet-3
 rly q balance uni-1
 ```
-8. Next, we generate a new path representing a client, connection, channel and a specific port between the two networks.
+8. Next, we generate a new path representing a client, connection, channel and a specific port between the two networks
 ```bash
 rly paths generate uni-1 umee-alpha-mainnet-3 transfer --port=transfer
 ```
-9. **(Optional)** Open a channel for relaying:
+9. **(Optional)** Open a channel for relaying
 ```bash
 rly tx link transfer --debug
 ```
-10. Check paths is ok:
+10. Check paths is ok
 ```bash
 rly paths list -d
 ```
 Output should be:
 > 0: transfer             -> chns(✔) clnts(✔) conn(✔) chan(✔) (uni-1:transfer<>umee-alpha-mainnet-3:transfer)
-11. Create IBC transactions:
+11. Create IBC transactions
 ```bash
 rly tx transfer umee-alpha-mainnet-3 uni-1 1500uumee $(rly keys show uni-1 test-key) --path transfer
 rly tx transfer uni-1 umee-alpha-mainnet-3 1000ujunox $(rly keys show umee-alpha-mainnet-3 test-key) --path transfer
 ```
-12. Start the relayer:
+12. Start the relayer
 ```bash
 rly start transfer
 ```
@@ -100,7 +101,7 @@ Output should be like:
 > ★ Relayed 1 packets: [uni-1]port{transfer}->[umee-alpha-mainnet-3]port{transfer}
 
 > ★ Relayed 1 packets: [umee-alpha-mainnet-3]port{transfer}->[uni-1]port{transfer}
-13. Verify your balance:
+13. Verify your balance
 ```bash
 rly q balance umee-alpha-mainnet-3
 rly q balance uni-1
