@@ -104,7 +104,7 @@ sudo systemctl enable umeed
 sudo systemctl restart umeed
 journalctl -u umeed -f
 ```
-### ⚠️ The network is starting 18.01.2022 12:01 UTC.
+### ⚠️ The network is starting 18.01.2022 16:00 UTC.
 ### Generate keys
 If you dont have keys, you can generate them:
 ```bash
