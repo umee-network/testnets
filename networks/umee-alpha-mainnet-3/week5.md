@@ -26,7 +26,11 @@ Test and analyze points of failure, opportunities, and other validators, free re
 #### Send Umee tokens to the Juno network via IBC module
  * Follow [github instructions](https://github.com/umee-network/testnets/blob/main/networks/umee-alpha-mainnet-3/IBC.md) as a starter
  * Send Umee tokens to Juno network and Juno tokens to Umee network
- * Submit Juno wallet which you sent Umee tokens to and Umee wallet which you sent Juno tokens to
+ * Submit:
+   * **Juno** wallet which you sent **Umee** tokens to
+   * **Umee** wallet which you sent **Juno** tokens to
+   * **HASH** of transfer txs from **Umee** to **Juno** chain
+   * **HASH** of transfer txs from **Juno** to **Umee** chain
  * Submit HASH of transfer txs to and from Umee chain
 
 ## How to set the multiplier?
