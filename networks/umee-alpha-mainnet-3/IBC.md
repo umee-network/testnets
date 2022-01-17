@@ -21,7 +21,8 @@ RLY_CONFIG_PATH="$HOME/relayer/interchain/chains"
 rly config init
 ```
 4. Add Juno (uni-1) and Umee (umee-alpha-mainnet-3) chain configurations to the relayer's configuration
-You can use your own RPC for both networks, in this example we use Nodes Guru RPC for Umee and Juno networks
+
+**You can use your own RPC for both networks, in this example we use Nodes Guru RPC for Umee and Juno networks**
   - Umee:
   ```bash
   echo '{
