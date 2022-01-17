@@ -49,7 +49,7 @@ rm -r $HOME/umee
 git clone https://github.com/umee-network/umee.git
 cd umee
 git pull
-git checkout tags/v0.5.0-rc2
+git checkout tags/v0.5.0-rc3
 make build
 cp $HOME/umee/build/umeed /usr/local/bin
 umeed version
@@ -61,7 +61,7 @@ rm -r $HOME/peggo
 git clone https://github.com/umee-network/peggo.git
 cd peggo
 git pull
-git checkout tags/v0.1.0
+git checkout tags/v0.1.1
 make install
 peggo version
 ```
