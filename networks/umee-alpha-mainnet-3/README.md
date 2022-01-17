@@ -71,6 +71,8 @@ UMEE_INTERNAL_MONIKER=$(hostname) # or what you prefer
 rm $HOME/.umee/config/genesis.json
 umeed init $UMEE_INTERNAL_MONIKER --chain-id umee-alpha-mainnet-3
 wget -q -O $HOME/.umee/config/genesis.json https://raw.githubusercontent.com/umee-network/testnets/main/networks/umee-alpha-mainnet-3/genesis.json
+sha256sum $HOME/.umee/config/genesis.json 
+# a4ca0d1fc4f66104c8a522640d6cf921ed605956f574b18569969c4a9355bec7
 peers="b2bf71f20584fa63dbb4ca66f0533a58a7a4dcea@65.108.178.116:26656,dcbb9502e059f40b18c8fac2837b712340ad4727@161.97.159.64:26656,b5e533e6df886eb34a9d8e348124f400a77a33b6@146.59.55.100:26656,04fa2806127d971f1d23b2f8d116e4a8ddefc191@159.89.144.87:26656,0f5245bf2a9029676052043efd82e814ec5aece1@89.163.164.209:26656,db6ef36604edca1cb93c9b4dc3fad47dc3aa8989@135.181.165.110:26656"
 sed -i.bak -e "s/^persistent_peers *=.*/persistent_peers = \"$peers\"/" $HOME/.umee/config/config.toml
 sed -i '/\[telemetry\]/{:a;n;/enabled/s/false/true/;Ta};/\[api\]/{:a;n;/enable/s/false/true/;Ta;}' $HOME/.umee/config/app.toml
