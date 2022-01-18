@@ -9,7 +9,7 @@ Test and analyze points of failure, opportunities, and other validators, free re
 ### Task 2
 ### ⚠️ Make sure you use your second set of wallets (different from your validator and orchestrator wallets) to send the required amount of transactions.
 #### Run the Most Profitable Bridge Relayer: Test our bridge implementation in a “real world setup” (Umee and ETH have an arbitrary value)
-* !!! There is a cap for transaction fees which are eligible for PNL ranking:
+* ⚠️ There is a cap for transaction fees which are eligible for PNL ranking:
   * Bridging from ETH --> UMEE: 0.05 ETH Max Bridge Fee
   * Bridging from UMEE --> ETH: 10000000 uumee Max Bridge Fee
 
@@ -70,14 +70,14 @@ Example:
 umeed tx peggy send-to-eth 0x05a64fE82628217900ced80Bf3747b5ef88BFa21 10000000uumee 1uumee --from validator --chain-id umee-alpha-mainnet-2
 ```
 ### From ETH to Cosmos
-#### NB: `TBA` is ERC20 Umee token address
+#### NB: `0xaf2487c44ce59a2ef1543cc8809cb060e7418f6a` is ERC20 Umee token address
 Syntax:
 ```bash
 peggo bridge send-to-cosmos [token-address] [recipient] [amount] [flags]
 ```
 Example:
 ```bash
-peggo bridge send-to-cosmos TBA umee1qpuaz7q3qw0lnu9jng8xa5md6p3pg9zey5z875 1000000 --eth-pk=$ETH_PK_CLEAN --eth-rpc=$ETH_RPC
+peggo bridge send-to-cosmos 0xaf2487c44ce59a2ef1543cc8809cb060e7418f6a umee1qpuaz7q3qw0lnu9jng8xa5md6p3pg9zey5z875 1000000 --eth-pk=$ETH_PK_CLEAN --eth-rpc=$ETH_RPC
 ```
 `$ETH_PK_CLEAN` - your private key from ETH wallet without `0x`
 
