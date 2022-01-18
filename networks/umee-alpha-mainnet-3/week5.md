@@ -67,7 +67,7 @@ umeed tx peggy send-to-eth [eth-dest-addr] [amount] [bridge-fee] [flags]
 ```
 Example:
 ```bash
-umeed tx peggy send-to-eth 0x05a64fE82628217900ced80Bf3747b5ef88BFa21 10000000uumee 1uumee --from validator --chain-id umee-alpha-mainnet-2
+umeed tx peggy send-to-eth 0x05a64fE82628217900ced80Bf3747b5ef88BFa21 10000000uumee 1uumee --from validator --chain-id umee-alpha-mainnet-3
 ```
 ### From ETH to Cosmos
 #### NB: `0xb63d2c2618bc300d96d5336943429aa85f24e856` is ERC20 Umee token address
