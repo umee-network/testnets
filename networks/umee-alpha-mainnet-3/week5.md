@@ -18,7 +18,7 @@ Test and analyze points of failure, opportunities, and other validators, free re
   * **Maximum per day: 1,000 successful transactions Umee-ETH and 1,000 ETH-Umee**
 * P&Ls of the validators are calculated and the ones with the highest value get the highest points.
 * Please note:
-  * We will start counting a validator’s profit and loss from block height **TBA**
+  * We will start counting a validator’s profit and loss from block height **6223027**
   * We will only be counting your profit and loss on your **orchestrator address (relayer transactions)**; any other transaction fees occurred outside of your orchestrator address will **NOT** be counted
   * Make sure you use your **second set of wallets (different from your validator and orchestrator wallets)** to send the required amount of transactions
 
