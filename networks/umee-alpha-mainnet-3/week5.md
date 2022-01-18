@@ -9,6 +9,10 @@ Test and analyze points of failure, opportunities, and other validators, free re
 ### Task 2
 ### ⚠️ Make sure you use your second set of wallets (different from your validator and orchestrator wallets) to send the required amount of transactions.
 #### Run the Most Profitable Bridge Relayer: Test our bridge implementation in a “real world setup” (Umee and ETH have an arbitrary value)
+* !!! There is a cap for transaction fees which are eligible for PNL ranking:
+  * Bridging from ETH --> UMEE: 0.05 ETH Max Bridge Fee
+  * Bridging from UMEE --> ETH: 10000000 uumee Max Bridge Fee
+
 * Bridge relayers can set customized economic factors if they choose to and monitor bridge transaction requests.
 * Relayers need to make the most fees from relaying transactions across blockchains while covering the network fees from the bridged blockchains.
 * Umee will set up an exchange rate table for uUMEE and USDT and change the rate randomly throughout the day/week.
