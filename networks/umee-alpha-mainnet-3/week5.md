@@ -70,14 +70,14 @@ Example:
 umeed tx peggy send-to-eth 0x05a64fE82628217900ced80Bf3747b5ef88BFa21 10000000uumee 1uumee --from validator --chain-id umee-alpha-mainnet-2
 ```
 ### From ETH to Cosmos
-#### NB: `0xaf2487c44ce59a2ef1543cc8809cb060e7418f6a` is ERC20 Umee token address
+#### NB: `0xb63d2c2618bc300d96d5336943429aa85f24e856` is ERC20 Umee token address
 Syntax:
 ```bash
 peggo bridge send-to-cosmos [token-address] [recipient] [amount] [flags]
 ```
 Example:
 ```bash
-peggo bridge send-to-cosmos 0xaf2487c44ce59a2ef1543cc8809cb060e7418f6a umee1qpuaz7q3qw0lnu9jng8xa5md6p3pg9zey5z875 1000000 --eth-pk=$ETH_PK_CLEAN --eth-rpc=$ETH_RPC
+peggo bridge send-to-cosmos 0xb63d2c2618bc300d96d5336943429aa85f24e856 umee1qpuaz7q3qw0lnu9jng8xa5md6p3pg9zey5z875 1000000 --eth-pk=$ETH_PK_CLEAN --eth-rpc=$ETH_RPC
 ```
 `$ETH_PK_CLEAN` - your private key from ETH wallet without `0x`
 
