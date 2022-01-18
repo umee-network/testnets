@@ -81,4 +81,4 @@ peggo bridge send-to-cosmos 0xaf2487c44ce59a2ef1543cc8809cb060e7418f6a umee1qpua
 ```
 `$ETH_PK_CLEAN` - your private key from ETH wallet without `0x`
 
-`$ETH_RPC` - your Goerli ETH endpoint (you can use `https://goerli-light.nodes.guru`)
+`$ETH_RPC` - your Goerli ETH endpoint (you can use `https://goerli-light.nodes.guru` but better setup your own goerli endpoint)
