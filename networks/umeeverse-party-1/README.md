@@ -55,7 +55,7 @@ Chain ID: `umeeverse-party-1`
 Note: try doing this from the developer console in the [Block Explorer](#apps)
 
 ```javascript
-await fetch("https://raw.githubusercontent.com/umee-network/umee/main/networks/umeeverse-party-1/keplr-umee-config.json")
+await fetch("https://raw.githubusercontent.com/umee-network/testnets/main/networks/umeeverse-party-1/keplr-umee-config.json")
   .then(r => r.json())
   .then(keplr.experimentalSuggestChain.bind(keplr))
   .then(() => keplr.enable('umeeverse-party-1'))
@@ -85,7 +85,7 @@ Chain ID: `gaia-umeeverse-party-1`
 Note: try doing this from the developer console in the [Block Explorer](#apps)
 
 ```javascript
-await fetch("https://raw.githubusercontent.com/umee-network/umee/main/networks/umeeverse-party-1/keplr-gaia-config.json")
+await fetch("https://raw.githubusercontent.com/umee-network/testnets/main/networks/umeeverse-party-1/keplr-gaia-config.json")
   .then(r => r.json())
   .then(keplr.experimentalSuggestChain.bind(keplr))
   .then(() => keplr.enable('gaia-umeeverse-party-1'))
