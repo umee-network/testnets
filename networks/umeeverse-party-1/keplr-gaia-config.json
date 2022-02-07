@@ -1,0 +1,48 @@
+{
+  "rpc": "https://rpc.sphaeralcea.gaia-umeeverse-party-1.network.umee.cc",
+  "rest": "https://api.sphaeralcea.gaia-umeeverse-party-1.network.umee.cc",
+  "chainId": "gaia-umeeverse-party-1",
+  "chainName": "gaia-umeeverse-party-1",
+  "bip44": {
+    "coinType": 118
+  },
+  "coinType": 118,
+  "currencies": [
+    {
+      "coinDenom": "ATOM",
+      "coinMinimalDenom": "uatom",
+      "coinDecimals": 6
+    },
+    {
+      "coinDenom": "UMEE",
+      "coinMinimalDenom": "ibc/9F53D255F5320A4BE124FF20C29D46406E126CE8A09B00CA8D3CFF7905119728",
+      "coinDecimals": 6
+    }
+  ],
+  "feeCurrencies": [
+    {
+      "coinDenom": "ATOM",
+      "coinMinimalDenom": "uatom",
+      "coinDecimals": 6
+    }
+  ],
+  "stakeCurrency": {
+    "coinDenom": "ATOM",
+    "coinMinimalDenom": "uatom",
+    "coinDecimals": 6
+  },
+  "features": [
+    "stargate",
+    "ibc-transfer",
+    "no-legacy-stdTx"
+  ],
+  "explorerUrlToTx": "https://explorer-git-stacks-umeeverse-party-1-umee.vercel.app/gaia-umeeverse-party-1/tx/{txHash}",
+  "bech32Config": {
+    "bech32PrefixAccAddr": "cosmos",
+    "bech32PrefixAccPub": "cosmospub",
+    "bech32PrefixValAddr": "cosmosvaloper",
+    "bech32PrefixValPub": "cosmosvaloperpub",
+    "bech32PrefixConsAddr": "cosmosvalcons",
+    "bech32PrefixConsPub": "cosmosvalconspub"
+  }
+}
