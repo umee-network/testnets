@@ -50,3 +50,9 @@ https://api.section.juno-umeemania-1.network.umee.cc
 https://rpc.wall.osmosis-umeemania-1.network.umee.cc
 https://api.wall.osmosis-umeemania-1.network.umee.cc
 ```
+
+### Terra: terra-umeemania-1
+```
+https://rpc.street.terra-umeemania-1.network.umee.cc
+https://api.street.terra-umeemania-1.network.umee.cc
+```
