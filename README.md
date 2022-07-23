@@ -7,3 +7,9 @@ networks, please visit the main umee [repository](https://github.com/umee-networ
 To submit a genesis transaction (gentx) for a network, please open a pull request
 against the `main` branch of this repository into the relevant network under the
 `networks/` directory.
+
+## Current/Planned Public Testnets
+
+* [asherah-1](networks/asherah-1) (v2.0.3-rc2 genesis)
+* `bloom-1` (v3.x.x rc genesis start date TBD)
+* `canon-1` long lived will be test canary for mainnet upgrade (v1->v3 start date TBD)
