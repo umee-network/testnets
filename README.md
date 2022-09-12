@@ -11,5 +11,6 @@ against the `main` branch of this repository into the relevant network under the
 ## Current/Planned Public Testnets
 
 * [asherah-1](networks/asherah-1) (v2.0.3-rc2 genesis)
-* `bloom-1` (v3.x.x rc genesis start date TBD)
+* `bloom-1` (v3.x.x-rcN genesis start date TBD)
 * `canon-1` long lived will be test canary for mainnet upgrade (v1->v3 start date TBD)
+* [canon-1](networks/canon-1) (v1.0.3 genesis; will be part of community upgrade test to v3.0.0 once released)
