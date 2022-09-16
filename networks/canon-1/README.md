@@ -1,7 +1,7 @@
 # Umee Testnet canon-1
 
 * This testnet will start initially as a 1.x.x testnet and will later be upgraded to 3.x.x once a release candidate is available.
-* All validators are running badgerdb
+* All listed validators are running badgerdb
 
 
 | Attribute | Value |
@@ -13,10 +13,15 @@
 
 | Component | Version |
 |----------:|---------|
-| Umee | `1.0.3-plusbadger` |
+| Umee | `1.1.2` |
 | Peggo | `0.4.0` |
-| Price Feeder | `0.2.4` |
+| Price Feeder | `0.3.0` |
 
+## Upgrades
+
+### v1.1.2
+
+With [canon-1 prop 1](https://explorer.network.umee.cc/canon-1/gov/1), canon-1 was upgraded to [v1.1.2](https://github.com/umee-network/umee/releases/tag/v1.1.2) to be up-to-date with the current version running on mainnet. Mainnet was upgraded as a part of [umee-1 prop 20](https://www.mintscan.io/umee/proposals/20).
 
 ## Tools
 
@@ -72,5 +77,3 @@
 | RPC          | https://rpc.buttercup.canon-1.network.umee.cc |
 | API          | https://api.buttercup.canon-1.network.umee.cc |
 | GRPC         | `grpc.buttercup.canon-1.network.umee.cc:443` |
-
-
