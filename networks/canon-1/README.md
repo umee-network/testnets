@@ -77,3 +77,10 @@ With [canon-1 prop 1](https://explorer.network.umee.cc/canon-1/gov/1), canon-1 w
 | RPC          | https://rpc.buttercup.canon-1.network.umee.cc |
 | API          | https://api.buttercup.canon-1.network.umee.cc |
 | GRPC         | `grpc.buttercup.canon-1.network.umee.cc:443` |
+
+#### Swap binaries
+
+* We had an consensus failure using [v3.0.0-rc1](https://github.com/umee-network/umee/releases/tag/v3.0.0-rc1) so we made another release with improvements [v3.0.0-rc2](https://github.com/umee-network/umee/releases/tag/v3.0.0-rc2)
+* The last block created before swapping the binary was [416813](https://explorer.network.umee.cc/canon-1/blocks/416813)
+  * Exported genesis from block [416813](https://storage.googleapis.com/umeedropzone/canon-1-export-416813-set-20.tar.xz)
+* We wait one hour to restart the chain to give time to others validators to swap their binary also
