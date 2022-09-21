@@ -37,9 +37,9 @@
 | Kind | Value |
 |-----:|-------|
 | Peer Address | `c27f331e55a35c60aab5363e31209d92028aa15e@35.215.123.79:26656` |
-| RPC          | https://rpc.glass-1.champagne-1.network.umee.cc |
-| API          | https://api.glass-1.champagne-1.network.umee.cc |
-| GRPC         | `grpc.glass-1.champagne-1.network.umee.cc:443` |
+| RPC          | https://rpc.glass-1.champagne-2.network.umee.cc |
+| API          | https://api.glass-1.champagne-2.network.umee.cc |
+| GRPC         | `grpc.glass-1.champagne-2.network.umee.cc:443` |
 
 ### Validator "glass-2"
 
@@ -53,9 +53,9 @@
 | Kind | Value |
 |-----:|-------|
 | Peer Address | `f38d17b0d3841900dc6892e95a7642bb73be1b84@35.215.93.223:26656` |
-| RPC          | https://rpc.glass-2.champagne-1.network.umee.cc |
-| API          | https://api.glass-2.champagne-1.network.umee.cc |
-| GRPC         | `grpc.glass-2.champagne-1.network.umee.cc:443` |
+| RPC          | https://rpc.glass-2.champagne-2.network.umee.cc |
+| API          | https://api.glass-2.champagne-2.network.umee.cc |
+| GRPC         | `grpc.glass-2.champagne-2.network.umee.cc:443` |
 
 ### Validator "glass-3"
 
@@ -69,8 +69,8 @@
 | Kind | Value |
 |-----:|-------|
 | Peer Address | `afe66c23e49dc08897dbbae33335f0fdc47e5445@35.212.164.89:26656` |
-| RPC          | https://rpc.glass-3.champagne-1.network.umee.cc |
-| API          | https://api.glass-3.champagne-1.network.umee.cc |
-| GRPC         | `grpc.glass-3.champagne-1.network.umee.cc:443` |
+| RPC          | https://rpc.glass-3.champagne-2.network.umee.cc |
+| API          | https://api.glass-3.champagne-2.network.umee.cc |
+| GRPC         | `grpc.glass-3.champagne-2.network.umee.cc:443` |
 
 
